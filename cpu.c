@@ -25,7 +25,7 @@ int setCPUMax(unsigned int index) {
 	}
 
 	if (cpufreq_set_frequency(index, cpu_max) != 0) {
-		LOG("Unable to set frequency(%lu)\n", cpu_max);
+		LOG("Unable to set frequency(%luMHz) Are u root?\n", cpu_max / 1000);
 		return -1;
 	}
 
@@ -52,7 +52,7 @@ int setCPUMin(unsigned int index) {
         }
 
         if (cpufreq_set_frequency(index, cpu_min) != 0) {
-                LOG("Unable to set frequency(%lu)\n", cpu_min);
+                LOG("Unable to set frequency(%luMHz) Are u root?\n", cpu_min / 1000);
                 return -1;
         }
 
