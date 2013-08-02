@@ -1,4 +1,4 @@
 cpufreq-example
 ===============
 
-HowTo change cpu frequency in c using libcpufreq
+HowTo change cpu frequency in c using libcpufreq library
